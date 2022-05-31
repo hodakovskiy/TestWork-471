@@ -17,6 +17,7 @@ class CreateRecordsTagsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('records_id');
             $table->unsignedBigInteger('tags_id');
+            $table->string('description')->nullable();
             $table->timestamps();
             
                         

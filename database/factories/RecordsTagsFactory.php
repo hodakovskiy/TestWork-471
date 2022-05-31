@@ -18,6 +18,7 @@ class RecordsTagsFactory extends Factory
         return [
              'records_id' => Records::factory(),
              'tags_id' => Tags::factory(),
+             'description' => $this->faker->text(),
         ];
     }
 }
